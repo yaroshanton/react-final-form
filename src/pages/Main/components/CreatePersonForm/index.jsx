@@ -6,7 +6,7 @@ import {DATE_MUSK, EMPTY_PHONE_MUSK, YNZR_MUSK} from 'utils/masks';
 import {setRequiredLabel} from 'utils/components';
 //components
 import InputField from 'shared/InputField';
-import {SelectField} from 'shared/SelectField';
+import SelectField from 'shared/SelectField';
 import ToggleInputField from 'shared/ToggleInputField';
 import PhoneNumberField from 'shared/PhoneNumberField';
 import TextAreaField from 'shared/TextAreaField';

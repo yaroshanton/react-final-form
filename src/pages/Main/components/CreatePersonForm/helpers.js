@@ -143,8 +143,8 @@ export const formInitialValues = {
 
 export const genderOptions = [
 	{value: '', label: '-- Вибрати --'},
-	{value: 'male', label: 'Мужской'},
-	{value: 'female', label: 'Женский'},
+	{value: 'male', label: 'Чоловіча'},
+	{value: 'female', label: 'Жіноча'},
 ];
 
 export const contactMethodOptions = [

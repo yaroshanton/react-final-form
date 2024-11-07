@@ -4,7 +4,7 @@ import cx from 'classnames';
 //styles
 import styles from './SelectField.module.scss';
 
-export const SelectField = ({input, meta, label, options}) => {
+const SelectField = ({input, meta, label, options}) => {
 	const hasError = meta.touched && meta.error;
 
 	return (
@@ -21,3 +21,5 @@ export const SelectField = ({input, meta, label, options}) => {
 		</div>
 	);
 };
+
+export default SelectField;
