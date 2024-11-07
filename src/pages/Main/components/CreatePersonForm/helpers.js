@@ -18,7 +18,7 @@ const validationSchema = yup.object().shape({
 		.required('Дата народження обов’язкова для заповнення'),
 	gender: yup
 		.string()
-		.required('Пол обов’язковий для заповнення')
+		.required('Поле обов’язковий для заповнення')
 		.oneOf(['male', 'female'], 'Оберіть коректний варіант'),
 	patronymic: yup
 		.object()
@@ -53,7 +53,10 @@ const validationSchema = yup.object().shape({
 	birthCountry: ukraineTextSchema,
 	birthCity: ukraineTextSchema,
 	contactMethod: yup.string().notRequired(),
-	secretWord: ukraineTextSchema,
+	secretWord: yup
+		.string()
+		.required('Поле обов’язковий для заповнення')
+		.min(6, 'Секретне слово повинно містити мінумум 6 символів'),
 	phoneNumber: yup.string().test('valid-phone', 'Невірний формат номера', function (value) {
 		if (value && !/^\+380 \(\d{2}\) \d{3}-\d{2}-\d{2}$/.test(value)) {
 			return this.createError({message: 'Невірний формат номера'});
