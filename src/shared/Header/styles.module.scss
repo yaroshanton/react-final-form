@@ -1,8 +1,23 @@
 .wrapper {
 	max-width: 1128px;
-	margin: 0 auto 20px;
+	margin: 0 auto;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	padding-bottom: 20px;
+	padding: 20px 20px;
+	background-color: #3498db;
+	color: white;
+}
+
+.wrapper::before {
+	content: '←';
+	font-size: 18px;
+	margin-right: 10px;
+	color: white;
+	cursor: pointer;
+}
+
+.title {
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 10px;
 }

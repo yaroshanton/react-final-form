@@ -3,12 +3,13 @@ import React from 'react';
 import Layout from 'shared/Layout';
 //styles
 import styles from './styles.module.scss';
+import CreatePersonForm from './components/CreatePersonForm';
 
 const Main = () => {
 	return (
 		<Layout>
 			<div className={styles.wrapper}>
-				<div className={styles.title}> Main </div>
+				<CreatePersonForm />
 			</div>
 		</Layout>
 	);
