@@ -56,7 +56,7 @@ const validationSchema = yup.object().shape({
 	secretWord: yup
 		.string()
 		.required('Поле обов’язковий для заповнення')
-		.min(6, 'Секретне слово повинно містити мінумум 6 символів'),
+		.matches(/^[А-ЯЄІЇа-яєії']{6,}$/, 'Має містити не менше 6 символів на українській мові'),
 	phoneNumber: yup.string().test('valid-phone', 'Невірний формат номера', function (value) {
 		if (value && !/^\+380 \(\d{2}\) \d{3}-\d{2}-\d{2}$/.test(value)) {
 			return this.createError({message: 'Невірний формат номера'});
