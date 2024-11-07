@@ -66,29 +66,32 @@
 	position: absolute;
 	right: 0;
 	width: 40px;
-	height: 20px;
-	background-color: var(--secondary-grey);
+	height: 15px;
+	background-color: var(--primary-grey);
 	border-radius: 10px;
 	cursor: pointer;
 	transition: background-color 0.3s;
 
 	&.active {
-		background-color: var(--primary-blue);
+		background-color: var(--primary-white);
+		outline: 1px solid var(--primary-grey);
 	}
 }
 
 .toggleCircle {
 	width: 18px;
 	height: 18px;
-	background-color: var(--primary-white);
+	background-color: var(--primary-dark);
 	border-radius: 50%;
 	position: absolute;
-	top: 1px;
-	left: 2px;
+	top: -1.5px;
+	left: 0;
 	transition: left 0.3s;
 
 	.active & {
-		left: 20px;
+		left: 22px;
+		background-color: var(--primary-white);
+		outline: 1px solid var(--primary-grey);
 	}
 }
 
