@@ -9,6 +9,7 @@ import InputField from 'shared/InputField';
 import {SelectField} from 'shared/SelectField';
 import ToggleInputField from 'shared/ToggleInputField';
 import PhoneNumberField from 'shared/PhoneNumberField';
+import TextAreaField from 'shared/TextAreaField';
 //helpers
 import {
 	contactMethodOptions,
@@ -20,7 +21,6 @@ import {
 } from './helpers';
 //styles
 import styles from './CreatePersonForm.module.scss';
-import TextAreaField from 'shared/TextAreaField';
 
 const CreatePersonForm = () => {
 	const [showResult, setShowResult] = useState(false);
