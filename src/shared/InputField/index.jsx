@@ -9,9 +9,7 @@ const InputField = ({input, meta, label, type, placeholder, showLabelAndPlacehol
 
 	return (
 		<div className={styles.container}>
-			{showLabelAndPlaceholder && (
-				<label className={cx(styles.label, {[styles.alwaysVisible]: showLabelAndPlaceholder})}>{label}</label>
-			)}
+			{showLabelAndPlaceholder && <label className={cx(styles.label, styles.alwaysVisible)}>{label}</label>}
 			<input
 				{...input}
 				type={type || 'text'}
