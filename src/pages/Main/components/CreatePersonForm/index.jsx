@@ -166,7 +166,7 @@ const CreatePersonForm = () => {
 
 							<div className={styles.buttons}>
 								<button type="submit" className={cx(styles.submitButton)}>
-									Відправити
+									Показати JSON
 								</button>
 								{showResult && (
 									<button
@@ -185,9 +185,7 @@ const CreatePersonForm = () => {
 
 			{showResult && (
 				<div className={styles.resultContainer}>
-					{showResult && submittedData && (
-						<pre className={styles.jsonDisplay}>{JSON.stringify(submittedData, null, 2)}</pre>
-					)}
+					<pre className={styles.jsonDisplay}>{JSON.stringify(submittedData, null, 2)}</pre>
 				</div>
 			)}
 		</div>
